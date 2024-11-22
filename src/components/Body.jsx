@@ -1,11 +1,13 @@
-import Header from "./Header";
+// import Header from "./Header";
 import Login from "./Login";
 import Browse from "./Browse";
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-
+import { useEffect } from "react";
+import { createBrowserRouter, RouterProvider, useNavigate } from 'react-router-dom';
+import { useDispatch } from "react-redux";
 
 const Body = () => {
- const appRouter = createBrowserRouter([
+    const dispatch = useDispatch();
+    const appRouter = createBrowserRouter([
     {
         path: "/",
         element: <Login />
@@ -15,6 +17,8 @@ const Body = () => {
         element: <Browse />
     }
  ])
+
+   
 
     return (
         <div>
