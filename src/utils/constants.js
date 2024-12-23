@@ -8,11 +8,19 @@ export const API_OPTIONS =  {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5YWQxYmRhZmQ2ZWEyZGExZjEyMGZmYWIxOTdhMWM1OCIsIm5iZiI6MTczMTY4MDA3OS4xODg3OTA2LCJzdWIiOiI2NzM3NTU3YWExMDJkMjY5YzAzZjI1MjEiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.LscsF_S2AQ6yXV4pu6X7gM5l7w9J_Gyrak2V075_VHM'
+      Authorization: 'Bearer ' + process.env.REACT_APP_TMBD_KEY,
     }
   };
 
+ export const IMG_CDN_URL = "https://image.tmdb.org/t/p/";
 
+ export const SUPPORTED_LANGUAGES = [
+{IDENTIFIER: "en", NAME: "English"},
+{IDENTIFIER: "hindi", NAME: "Hindi"},
+{IDENTIFIER: "spanish", NAME: "Spanish"},
+ ];
+
+ export const SECRET_KEY = "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"
 
 
 

@@ -1,12 +1,9 @@
 // import Header from "./Header";
 import Login from "./Login";
 import Browse from "./Browse";
-import { useEffect } from "react";
 import { createBrowserRouter, RouterProvider, useNavigate } from 'react-router-dom';
-import { useDispatch } from "react-redux";
 
 const Body = () => {
-    const dispatch = useDispatch();
     const appRouter = createBrowserRouter([
     {
         path: "/",
@@ -21,7 +18,7 @@ const Body = () => {
    
 
     return (
-        <div>
+        <div className="select-none">
          <RouterProvider router = {appRouter} />
         </div>
     )
