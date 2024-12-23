@@ -20,7 +20,7 @@ export const API_OPTIONS =  {
 {IDENTIFIER: "spanish", NAME: "Spanish"},
  ];
 
- export const SECRET_KEY = "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"
+ export const SECRET_KEY = process.env.REACT_APP_SECRET_KEY;
 
 
 
