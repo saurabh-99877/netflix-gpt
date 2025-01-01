@@ -120,7 +120,7 @@ const Header = () => {
      )
     }
 
-   {isSmall && toogle && <div className="parent fixed left-0 top-0  bg-black  h-full p-8  overflow-x-hidden ">
+   {isSmall && toogle && <div className="parent fixed left-0 top-0  bg-black max-w-[170px] h-full p-8  overflow-x-hidden ">
     <button className='text-white absolute right-2 top-2 text-xl' 
     onClick = {handleClose}>x</button>
     { toogle && (<div className='shrink-0 my-3 sm:mt-2 lg:mt-3'>

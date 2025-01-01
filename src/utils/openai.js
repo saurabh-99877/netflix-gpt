@@ -1,8 +1,8 @@
 import OpenAI from 'openai';
-import { SECRET_KEY } from './constants';
+import { someKey } from './constants';
 
 const client = new OpenAI({
-  apiKey: SECRET_KEY,
+  apiKey: someKey,
   dangerouslyAllowBrowser: true // This is the default and can be omitted
 });
 
